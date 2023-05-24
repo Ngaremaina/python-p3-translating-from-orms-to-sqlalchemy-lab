@@ -1,6 +1,4 @@
 from models import Dog
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 
 def create_table(base, engine):
     return base.metadata.create_all(engine)
